@@ -14,17 +14,17 @@ public class main : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		if(GUI.Button(new Rect(0, 0, 100, 50), "idle")){
-			animator.Play ("idle");
-		}
-		if(GUI.Button(new Rect(0, 100, 100, 50), "walk")){
+		if(GUI.Button(new Rect(0, 0, 100, 50), "walk")){
 			animator.Play ("walk");
 		}
-		if(GUI.Button(new Rect(0, 200, 100, 50), "run")){
+		if(GUI.Button(new Rect(0, 100, 100, 50), "run")){
 			animator.Play ("run");
 		}
-		if(GUI.Button(new Rect(0, 300, 100, 50), "attack")){
-			animator.Play ("strike");
+		if(GUI.Button(new Rect(0, 200, 100, 50), "attack")){
+			animator.Play ("attack");
+		}
+		if(GUI.Button(new Rect(0, 300, 100, 50), "idle")){
+			animator.Play ("idle");
 		}
 
 	}
